@@ -1,25 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
+// import { auth, signInWithGoogle } from './firebase/firebase.config';
+import {GoogleLoginButton} from './components/UI/GoogleLoginButton';
+import { LoginPage } from './components/User/LoginPage';
+import {Upload } from './components/upload/Upload';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <GoogleLoginButton login = {signInWithGoogle}/> */}
+      {/* <LoginPage /> */}
+      <Upload/>
     </div>
   );
-}
+} 
 
 export default App;
